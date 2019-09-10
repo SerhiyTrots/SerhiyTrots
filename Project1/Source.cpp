@@ -1,15 +1,23 @@
 #include <iostream>
+#include <string>
 using namespace std;
+
+struct A {
+	int price;
+	string name;
+	double kilos;
+};
+ 
 
 int main()
 {
-	const int index = 12;
-	cout << "Enter a height in duyms : _______\b\b\b\b\b\b\b";
-	int d;
-	cin >> d;
-	int f = d / 12;
-	d = d % 12;
-	cout << endl << "In funts :" << f << endl << "and " << d << " duyms" << endl;
+	int a;
+	A my = {23,"ghjgfjjy",34.23};
+	cout << my.price << endl << my.name;
+	A help[23];
+	help[2] = { 23,"ff",23.45 };
+	cout << a << endl;
+	cout << help[2].price << endl;
 
 	system("pause");
 	return 0;
